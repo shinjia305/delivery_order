@@ -230,3 +230,33 @@ ActionController::RoutingError (No route matches [GET] "/ws"):
   [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
   [1m[36mFood Load (1.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
   [1m[36mFood Count (4.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "foods"[0m
+Started GET "/" for 172.18.0.1 at 2022-04-09 11:06:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 526)
+Completed 200 OK in 50ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 3435)
+
+
+Started GET "/api/restaurants" for 172.18.0.1 at 2022-04-09 11:06:22 +0900
+Processing by Api::RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (2.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/restaurants_controller.rb:6:in `index'
+Completed 200 OK in 70ms (Views: 20.6ms | ActiveRecord: 11.2ms | Allocations: 7598)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2022-04-09 11:06:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/restaurants/1/foods" for 172.18.0.1 at 2022-04-09 11:11:40 +0900
+Processing by Api::FoodsController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/foods_controller.rb:4:in `index'
+  [1m[36mFood Load (2.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  ↳ app/controllers/api/foods_controller.rb:7:in `index'
+Completed 200 OK in 129ms (Views: 27.7ms | ActiveRecord: 12.7ms | Allocations: 13303)
+
+
+  [1m[36mPreOrder Load (2.1ms)[0m  [1m[34mSELECT "pre_orders".* FROM "pre_orders"[0m

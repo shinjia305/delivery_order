@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :api do
+    resources :restaurants do
+      resources :foods, only: %i[index]
+    end
+    resources :pre_orders, only: %i[index create]
+    put 'pre_orders/replace', to: 'pre_orders#replace'
+    resources :orders, only: %i[create]
+  end
 end

@@ -452,3 +452,248 @@ Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:25:11 +0900
   
 ActionController::RoutingError (No route matches [GET] "/ws"):
   
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:26:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:28:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:32:42 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:26 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:27 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:29 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:34 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:38 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:42 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:34:51 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/api/restaurants" for 172.19.0.1 at 2022-04-09 14:34:58 +0900
+Processing by Api::RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (2.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/api/restaurants_controller.rb:6:in `index'
+Completed 200 OK in 82ms (Views: 53.0ms | ActiveRecord: 22.9ms | Allocations: 9909)
+
+
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:35:05 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:35:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:35:09 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:35:13 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:35:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:35:38 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:36:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:37:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:39:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 14:43:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-09 16:06:38 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:08:23 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:08:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:08:27 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:08:31 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:08:40 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:08:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.20.0.1 at 2022-04-10 21:09:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:12:06 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:12:08 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:12:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:12:14 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:12:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:12:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:13:12 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:14:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:15:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:15:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:15:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:15:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:15:48 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:05 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:23 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:26 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:41 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:51 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:16:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:17:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:17:29 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:18:01 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.21.0.1 at 2022-04-10 21:19:06 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  

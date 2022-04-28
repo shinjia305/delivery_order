@@ -1539,3 +1539,103 @@ Started GET "/ws" for 172.19.0.1 at 2022-04-26 22:09:50 +0900
   
 ActionController::RoutingError (No route matches [GET] "/ws"):
   
+Started GET "/ws" for 172.19.0.1 at 2022-04-26 22:10:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.19.0.1 at 2022-04-26 22:13:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/" for 172.18.0.1 at 2022-04-28 22:04:53 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.4ms | Allocations: 526)
+Completed 200 OK in 49ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 3437)
+
+
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:05 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:06 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:09 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:13 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/api/restaurants/1/foods" for 172.18.0.1 at 2022-04-28 22:05:18 +0900
+Processing by Api::FoodsController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/foods_controller.rb:4:in `index'
+  [1m[36mFood Load (2.0ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  ↳ app/controllers/api/foods_controller.rb:7:in `index'
+Completed 200 OK in 163ms (Views: 32.0ms | ActiveRecord: 17.7ms | Allocations: 16247)
+
+
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:19 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:27 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/api/restaurants/2/foods" for 172.18.0.1 at 2022-04-28 22:05:34 +0900
+Processing by Api::FoodsController#index as HTML
+  Parameters: {"restaurant_id"=>"2"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/foods_controller.rb:4:in `index'
+  [1m[36mFood Load (1.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."restaurant_id" = $1[0m  [["restaurant_id", 2]]
+  ↳ app/controllers/api/foods_controller.rb:7:in `index'
+Completed 200 OK in 20ms (Views: 12.5ms | ActiveRecord: 1.8ms | Allocations: 2755)
+
+
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:34 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:46 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 172.18.0.1 at 2022-04-28 22:05:55 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  

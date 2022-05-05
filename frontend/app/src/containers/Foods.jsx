@@ -6,6 +6,23 @@ import {
 } from '../reducers/foods';
 import { fetchFoods } from '../apis/foods';
 import { REQUEST_STATE } from '../constants';
+import styled from 'styled-components';
+import { COLORS } from '../style_constants';
+import { LocalMallIcon } from '../components/Icons';
+
+const HeaderWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 32px;
+`;
+
+const BagIconWrapper = styled.div`
+  padding-top: 24px;
+`;
+
+const ColoredBagIcon = styled(LocalMallIcon)`
+  color: ${COLORS.MAIN};
+`;
 
 export const Foods = ({
   match

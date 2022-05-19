@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {COLORS} from '../style_contents';
+import {COLORS} from '../style_constants';
 
 export const BaseButton = styled.button`
   cursor: pointer;

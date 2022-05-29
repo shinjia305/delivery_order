@@ -26,3 +26,11 @@ export const replacePreOrders = (params) => {
   })
   .catch((e) => { throw e; })
 };
+
+export const fetchPreOrders = () => {
+  return axios.get(preOrders)
+  .then(res => {
+    return res.data
+  })
+  .catch((e) => { throw e; })
+}

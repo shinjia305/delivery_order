@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { preOrders } from '../urls/index';
+import { preOrders, preOrdersReplace } from '../urls/index';
 
 export const postPreOrders = (params) => {
   return axios.post(preOrders,
@@ -14,8 +14,8 @@ export const postPreOrders = (params) => {
   .catch((e) => { throw e;})
 }
 
-export const replaceLineFoods = (params) => {
-  return axios.put(lineFoodsReplace,
+export const replacePreOrders = (params) => {
+  return axios.put(preOrdersReplace,
     {
       food_id: params.foodId,
       count: params.count,

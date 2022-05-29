@@ -1,18 +1,26 @@
 import React, { Fragment, useEffect, useReducer, useState } from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
+
 import { LocalMallIcon } from '../components/Icons';
 import { FoodWrapper } from '../components/FoodWrapper';
+import { NewOrderConfirmDialog } from '../components/NewOrderConfirmDialog';
 import Skeleton from '@material-ui/lab/Skeleton';
-import { FoodOrderDialog } from '../components/FoodOrderDialog';
+
 import {
   initialState as foodsInitialState,
   foodsActionTyps,
   foodsReducer,
 } from '../reducers/foods';
+
 import { fetchFoods } from '../apis/foods';
+import { postPreOrders, replacePreOrders } from '../apis/pre_orders';
+
 import MainLogo from '../images/logo.png';
+import { FoodOrderDialog } from '../components/FoodOrderDialog';
 import FoodImage from '../images/food-image.jpg';
+
+import { HTTP_STATUS_CODE } from '../constants';
 import { COLORS } from '../style_constants';
 import { REQUEST_STATE } from '../constants';
 
@@ -45,18 +53,19 @@ const ItemWrapper = styled.div`
   margin: 16px;
 `;
 
-const submitOrder = () => {
-  console.log('登録ボタン押下')
-}
-
 export const Foods = ({match}) => {
-  const [foodsState, dispatch] = useReducer(foodsReducer, foodsInitialState);
   const initialState = {
     isOpenOrderDialog: false,
     selectedFood: null,
     selectedFoodCount: 1,
+    isOpenNewOrderDialog: false,
+    existingResutaurantName: "",
+    newResutaurantName: "",
   }
   const [state, setState] = useState(initialState);
+  const [foodsState, dispatch] = useReducer(foodsReducer, foodsInitialState);
+  const history = useHistory();
+
   useEffect(() => {
     dispatch({ type: foodsActionTyps.FETCHING });
     fetchFoods(match.params.restaurantsId)
@@ -69,6 +78,33 @@ export const Foods = ({match}) => {
         });
       })
   }, [])
+
+  const submitOrder = () => {
+    postPreOrders({
+      foodId: state.selectedFood.id,
+      count: state.selectedFoodCount,
+    }).then(() => history.push('/orders'))
+    .catch((e) => {
+      if (e.response.status === HTTP_STATUS_CODE.NOT_ACCEPTABLE){
+        setState({
+          ...state,
+          isOpenOrderDialog: false,
+          isOpenNewOrderDialog: true,
+          existingResutaurantName: e.response.data.existing_restaurant,
+          newResutaurantName: e.response.data.new_restaurant,
+        })
+      } else {
+        throw e;
+      }
+    })
+  };
+
+  const replaceOrder = () => {
+    replacePreOrders({
+      foodId: state.selectedFood.id,
+      count: state.selectedFoodCount,
+    }).then(() => history.push('/orders'))
+  }
 
   return (
     <Fragment>
@@ -133,6 +169,16 @@ export const Foods = ({match}) => {
             selectedFood: null,
             selectedFoodCount: 1,
           })}
+        />
+      }
+      {
+        state.isOpenNewOrderDialog &&
+        <NewOrderConfirmDialog
+          isOpen={state.isOpenNewOrderDialog}
+          onClose={() => setState({ ...state, isOpenNewOrderDialog: false})}
+          existingResutaurantName={state.existingResutaurantName}
+          newRestaurantName={state.newResutaurantName}
+          onClickSubmit={() => replaceOrder()}
         />
       }
     </Fragment>

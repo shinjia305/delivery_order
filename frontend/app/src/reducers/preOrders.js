@@ -6,26 +6,26 @@ export const initialState = {
   preOrdersSummary: null,
 };
 
-export const preOdersActionTyps = {
+export const preOrdersActionTyps = {
   FETCHING: 'FETCHING',
   FETCH_SUCCESS: 'FETCH_SUCCESS',
   POSTING: 'POSTING',
   POST_SUCCESS: 'POST_SUCCESS',
 }
 
-export const preOdersReducer = (state, action) => {
+export const preOrdersReducer = (state, action) => {
   switch (action.type) {
     case preOrdersActionTyps.FETCHING:
       return {
         ...state,
         fetchState: REQUEST_STATE.LOADING,
       };
-    case preOdersActionTyps.FETCH_SUCCESS:
+    case preOrdersActionTyps.FETCH_SUCCESS:
       return {
         fetchState: REQUEST_STATE.OK,
         preOrdersSummary: action.payload.preOrdersSummary,
       };
-    case preOdersActionTyps.POSTING:
+    case preOrdersActionTyps.POSTING:
       return {
         ...state,
         postState: REQUEST_STATE.LOADING,

@@ -6,7 +6,7 @@ class Order < ApplicationRecord
   def save_with_update_pre_orders!(pre_orders)
     ActiveRecord::Base.transaction do
       pre_orders.each do |pre_order|
-        pre_order.update_attributes!(active: false, order: self)
+        pre_order.update!(active: false, order: self)
       end
       self.save!
     end

@@ -33,4 +33,4 @@ export const fetchPreOrders = () => {
     return res.data
   })
   .catch((e) => { throw e; })
-}
+};

@@ -104,7 +104,7 @@ export const Foods = ({match}) => {
       foodId: state.selectedFood.id,
       count: state.selectedFoodCount,
     }).then(() => history.push('/orders'))
-  }
+  };
 
   return (
     <Fragment>

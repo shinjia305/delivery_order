@@ -37,7 +37,7 @@ module Api
 
     def replace
       PreOrder.active.other_restaurant(@ordered_food.restaurant.id).each do |pre_order|
-        pre_order.update_attribute(:active, false)
+        pre_order.update(:active, false)
       end
 
       set_pre_order(@ordered_food)

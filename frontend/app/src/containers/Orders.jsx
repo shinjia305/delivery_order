@@ -18,8 +18,10 @@ import {
 import MainLogo from '../images/logo.png';
 import { REQUEST_STATE } from '../constants';
 
-const HeaderWrapper = styled.img`
-  height: 90px;
+const HeaderWrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 32px;
 `;
 
 const MainLogoImage = styled.img`
@@ -76,7 +78,7 @@ export const Orders = () => {
     <Fragment>
       <HeaderWrapper>
         <Link to="/restaurants">
-          <MainLogoImage src={MainLogo} alt="main logo"></MainLogoImage>
+          <MainLogoImage src={MainLogo} alt="main logo" />
         </Link>
       </HeaderWrapper>
       <OrderListWrapper>
